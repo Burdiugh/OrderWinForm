@@ -20,82 +20,81 @@ namespace OrderWinForm
     {
         double sum;
         int number;
-        DateTime dt;
         StringBuilder str = new StringBuilder();
         public Form1()
         {
             InitializeComponent();
             sum = 0;
             number = new Random().Next(1,100000);
-            dt = DateTime.Now;
+           
         }
-        private bool isDrinks()
+        private bool isOrderDrinks()
         {
             if (cocacolaRB.Checked || pepsiRB.Checked || juiceRB.Checked || teaRB.Checked || beerRB.Checked)
             {
                 if (cocacolaRB.Checked)
                 {
                     sum += 0.50;
-                    str.Append($"\nCoca Cola  {0.50}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Coca Cola  {0.50}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}") ;
                 }
                 if (pepsiRB.Checked)
                 {
                     sum += 0.50;
-                    str.Append($"\nPepsi  {0.50}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Pepsi  {0.50}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (juiceRB.Checked)
                 {
                     sum += 1;
-                    str.Append($"\nFruit Juice  {1}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Fruit Juice  {1}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (teaRB.Checked)
                 {
                     sum += 1.5;
-                    str.Append($"\nTea  {1.5}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Tea  {1.5}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (beerRB.Checked)
                 {
                     sum += 3;
-                    str.Append($"\nBeer  {3}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Beer  {3}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 return true;
             }
             return false;
         }
-        private bool isCourses()
+        private bool isOrderCourses()
         {
             if (FriedEggsRB.Checked || PorridgeRB.Checked || MeatRB.Checked || PotatoRB.Checked || vegetablesRB.Checked)
             {
                 if (FriedEggsRB.Checked)
                 {
                     sum += 2;
-                    str.Append($"\nFried eggs  {2}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Fried eggs  {2}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (PorridgeRB.Checked)
                 {
                     sum += 3;
-                    str.Append($"\nPorridge  {3}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Porridge  {3}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (MeatRB.Checked)
                 {
                     sum += 8;
-                    str.Append($"\nMeat with sendwiches  {8}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Meat with sendwiches  {8}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (PotatoRB.Checked)
                 {
                     sum += 2;
-                    str.Append($"\nFried Potato  {2}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Fried Potato  {2}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (vegetablesRB.Checked)
                 {
                     sum += 6;
-                    str.Append($"\nFried vegetables  {6}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Fried vegetables  {6}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 return true;
             }
             return false;
         }
-        private bool isDeserts()
+        private bool isOrderDeserts()
         {
 
             if (chocCakeRB.Checked || iceCream.Checked || donatRB.Checked || cheeseRB.Checked || zefirRB.Checked)
@@ -103,27 +102,27 @@ namespace OrderWinForm
                 if (chocCakeRB.Checked)
                 {
                     sum += 3;
-                    str.Append($"\nChocolate Cake  {3}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Chocolate Cake  {3}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (iceCream.Checked)
                 {
                     sum += 2;
-                    str.Append($"\nIce Cream  {2}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Ice Cream  {2}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (donatRB.Checked)
                 {
                     sum += 2;
-                    str.Append($"\nDonat  {2}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Donat  {2}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (cheeseRB.Checked)
                 {
                     sum += 4;
-                    str.Append($"\nCheese Cake  {4}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Cheese Cake  {4}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 if (zefirRB.Checked)
                 {
                     sum += 1;
-                    str.Append($"\nZefir {1}$,  Date: {dt},  Number: {number}\n\n");
+                    str.Append($"{Environment.NewLine}Zefir {1}$,  Date: {DateTime.Now},  Number: {number}{Environment.NewLine}");
                 }
                 return true;
             }
@@ -132,10 +131,10 @@ namespace OrderWinForm
         private void calculateButton_Click(object sender, EventArgs e)
         {
             sum = 0;
-            if (isDrinks()&&isDeserts()&&isCourses())
-            {
-                showBox.Text = str.ToString() ;
-                MessageBox.Show("Sum: " + sum.ToString(), "Date: " + dt + "   Number: " + number, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (isOrderDrinks()&& isOrderDeserts()&& isOrderCourses())
+            { 
+                showBox.Text = str.ToString();
+                MessageBox.Show("Sum: " + sum.ToString()+"$", "Date: " + DateTime.Now + "   Number: " + number, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
