@@ -111,6 +111,7 @@ namespace OrderWinForm
             this.FriedEggsRB.Size = new System.Drawing.Size(89, 17);
             this.FriedEggsRB.TabIndex = 9;
             this.FriedEggsRB.TabStop = true;
+            this.FriedEggsRB.Tag = "2";
             this.FriedEggsRB.Text = "Fried eggs 2$";
             this.FriedEggsRB.UseVisualStyleBackColor = true;
             // 
@@ -122,6 +123,7 @@ namespace OrderWinForm
             this.PorridgeRB.Size = new System.Drawing.Size(79, 17);
             this.PorridgeRB.TabIndex = 10;
             this.PorridgeRB.TabStop = true;
+            this.PorridgeRB.Tag = "3";
             this.PorridgeRB.Text = "Porridge 3$";
             this.PorridgeRB.UseVisualStyleBackColor = true;
             // 
@@ -133,6 +135,7 @@ namespace OrderWinForm
             this.MeatRB.Size = new System.Drawing.Size(145, 17);
             this.MeatRB.TabIndex = 11;
             this.MeatRB.TabStop = true;
+            this.MeatRB.Tag = "8";
             this.MeatRB.Text = "Meat with sendwiches 8$";
             this.MeatRB.UseVisualStyleBackColor = true;
             // 
@@ -144,6 +147,7 @@ namespace OrderWinForm
             this.PotatoRB.Size = new System.Drawing.Size(96, 17);
             this.PotatoRB.TabIndex = 12;
             this.PotatoRB.TabStop = true;
+            this.PotatoRB.Tag = "2";
             this.PotatoRB.Text = "Fried potato 2$";
             this.PotatoRB.UseVisualStyleBackColor = true;
             // 
@@ -155,6 +159,7 @@ namespace OrderWinForm
             this.vegetablesRB.Size = new System.Drawing.Size(124, 17);
             this.vegetablesRB.TabIndex = 13;
             this.vegetablesRB.TabStop = true;
+            this.vegetablesRB.Tag = "6";
             this.vegetablesRB.Text = "Grilled vegetables 6$";
             this.vegetablesRB.UseVisualStyleBackColor = true;
             // 
@@ -173,10 +178,11 @@ namespace OrderWinForm
             this.cocacolaRB.AutoSize = true;
             this.cocacolaRB.Location = new System.Drawing.Point(6, 19);
             this.cocacolaRB.Name = "cocacolaRB";
-            this.cocacolaRB.Size = new System.Drawing.Size(95, 17);
+            this.cocacolaRB.Size = new System.Drawing.Size(89, 17);
             this.cocacolaRB.TabIndex = 15;
             this.cocacolaRB.TabStop = true;
-            this.cocacolaRB.Text = "Coca Cola 50c";
+            this.cocacolaRB.Tag = "1";
+            this.cocacolaRB.Text = "Coca Cola 1$";
             this.cocacolaRB.UseVisualStyleBackColor = true;
             // 
             // pepsiRB
@@ -184,10 +190,11 @@ namespace OrderWinForm
             this.pepsiRB.AutoSize = true;
             this.pepsiRB.Location = new System.Drawing.Point(6, 42);
             this.pepsiRB.Name = "pepsiRB";
-            this.pepsiRB.Size = new System.Drawing.Size(72, 17);
+            this.pepsiRB.Size = new System.Drawing.Size(66, 17);
             this.pepsiRB.TabIndex = 16;
             this.pepsiRB.TabStop = true;
-            this.pepsiRB.Text = "Pepsi 50c";
+            this.pepsiRB.Tag = "1";
+            this.pepsiRB.Text = "Pepsi 1$";
             this.pepsiRB.UseVisualStyleBackColor = true;
             // 
             // juiceRB
@@ -198,6 +205,7 @@ namespace OrderWinForm
             this.juiceRB.Size = new System.Drawing.Size(85, 17);
             this.juiceRB.TabIndex = 17;
             this.juiceRB.TabStop = true;
+            this.juiceRB.Tag = "1";
             this.juiceRB.Text = "Fruit juice 1$";
             this.juiceRB.UseVisualStyleBackColor = true;
             // 
@@ -206,10 +214,11 @@ namespace OrderWinForm
             this.teaRB.AutoSize = true;
             this.teaRB.Location = new System.Drawing.Point(6, 88);
             this.teaRB.Name = "teaRB";
-            this.teaRB.Size = new System.Drawing.Size(71, 17);
+            this.teaRB.Size = new System.Drawing.Size(62, 17);
             this.teaRB.TabIndex = 18;
             this.teaRB.TabStop = true;
-            this.teaRB.Text = " Tea 1.5$";
+            this.teaRB.Tag = "1.5";
+            this.teaRB.Text = " Tea 2$";
             this.teaRB.UseVisualStyleBackColor = true;
             // 
             // beerRB
@@ -220,6 +229,7 @@ namespace OrderWinForm
             this.beerRB.Size = new System.Drawing.Size(62, 17);
             this.beerRB.TabIndex = 19;
             this.beerRB.TabStop = true;
+            this.beerRB.Tag = "3";
             this.beerRB.Text = "Beer 3$";
             this.beerRB.UseVisualStyleBackColor = true;
             // 
@@ -241,6 +251,7 @@ namespace OrderWinForm
             this.chocCakeRB.Size = new System.Drawing.Size(116, 17);
             this.chocCakeRB.TabIndex = 21;
             this.chocCakeRB.TabStop = true;
+            this.chocCakeRB.Tag = "3";
             this.chocCakeRB.Text = "Chocolate Cake 3$";
             this.chocCakeRB.UseVisualStyleBackColor = true;
             // 
@@ -252,6 +263,7 @@ namespace OrderWinForm
             this.iceCream.Size = new System.Drawing.Size(88, 17);
             this.iceCream.TabIndex = 22;
             this.iceCream.TabStop = true;
+            this.iceCream.Tag = "2";
             this.iceCream.Text = "Ice Cream 2$";
             this.iceCream.UseVisualStyleBackColor = true;
             // 
@@ -263,6 +275,7 @@ namespace OrderWinForm
             this.donatRB.Size = new System.Drawing.Size(69, 17);
             this.donatRB.TabIndex = 23;
             this.donatRB.TabStop = true;
+            this.donatRB.Tag = "2";
             this.donatRB.Text = "Donat 2$";
             this.donatRB.UseVisualStyleBackColor = true;
             // 
@@ -274,6 +287,7 @@ namespace OrderWinForm
             this.cheeseRB.Size = new System.Drawing.Size(104, 17);
             this.cheeseRB.TabIndex = 24;
             this.cheeseRB.TabStop = true;
+            this.cheeseRB.Tag = "4";
             this.cheeseRB.Text = "Cheese Cake 4$";
             this.cheeseRB.UseVisualStyleBackColor = true;
             // 
@@ -285,6 +299,7 @@ namespace OrderWinForm
             this.zefirRB.Size = new System.Drawing.Size(61, 17);
             this.zefirRB.TabIndex = 25;
             this.zefirRB.TabStop = true;
+            this.zefirRB.Tag = "1";
             this.zefirRB.Text = "Zefir 1$";
             this.zefirRB.UseVisualStyleBackColor = true;
             // 
@@ -313,6 +328,7 @@ namespace OrderWinForm
             this.drinks.Size = new System.Drawing.Size(109, 135);
             this.drinks.TabIndex = 27;
             this.drinks.TabStop = false;
+            this.drinks.Tag = "2";
             // 
             // mainCourses
             // 
